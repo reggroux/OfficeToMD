@@ -3,9 +3,9 @@ requires = ["setuptools>=69"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "docx2md"
+name = "officetomd"
 version = "0.1.0"
-description = "Simple DOCX to Markdown converter"
+description = "Office files to Markdown converter (currently DOCX only)"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
@@ -14,7 +14,7 @@ dependencies = [
 ]
 
 [project.scripts]
-docx2md = "docx2md.cli:main"
+officetomd = "officetomd.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

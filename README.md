@@ -1,6 +1,8 @@
-# docx2md
+# OfficeToMD
 
-A small, local-first DOCX to Markdown converter.
+A small, local-first Office to Markdown converter. It is intended to support
+all Office file types in the future, but currently only works with Word
+`*.docx` files.
 
 ## Setup
 
@@ -22,17 +24,17 @@ python -m pip install -e .
 Convert a file:
 
 ```bash
-docx2md "Price Sheet Chat.docx"
+officetomd "Price Sheet Chat.docx"
 ```
 
 Choose an output path:
 
 ```bash
-docx2md "Price Sheet Chat.docx" -o output.md
+officetomd "Price Sheet Chat.docx" -o output.md
 ```
 
 Write to stdout:
 
 ```bash
-docx2md "Price Sheet Chat.docx" --stdout
+officetomd "Price Sheet Chat.docx" --stdout
 ```
